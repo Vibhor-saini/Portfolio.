@@ -71,16 +71,3 @@ $(document).ready(function() {
         }
     });
 });
-
-function sendMessage() {
-    var name = document.getElementById('nameInput').value;
-    var email = document.getElementById('emailInput').value;
-    var subject = document.getElementById('subjectInput').value;
-    var message = document.getElementById('messageInput').value;
-
-    var mailtoLink = 'mailto:vibhorsaini022@gmail.com'
-        + '?subject=' + encodeURIComponent(subject)
-        + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-
-    window.location.href = mailtoLink;
-}
